@@ -149,6 +149,7 @@ def append_to_list(lst, num):
 #    fees.
 
 def calculate_price(base_price, state_abrv, tax = 0.05):
+    """ calculates the total price including state fees"""
 
     with_tax = base_price + base_price * tax
     if state_abrv.upper() == "CA":
